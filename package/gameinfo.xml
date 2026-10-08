@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gameList>
+  <game>
+    <path>./Katana ZERO.sh</path>
+    <name>Katana ZERO</name>
+    <desc>Fight through a neon city as a samurai assassin. Slash enemies, return their bullets and manipulate time to survive encounters where one hit is fatal. Cinematic conversations uncover the story between missions.</desc>
+    <releasedate>20190418T000000</releasedate>
+    <developer>Askiisoft</developer>
+    <publisher>Devolver Digital / Netflix (Android)</publisher>
+    <genre>Action / Platformer</genre>
+    <image>./katanazero/cover.png</image>
+  </game>
+</gameList>

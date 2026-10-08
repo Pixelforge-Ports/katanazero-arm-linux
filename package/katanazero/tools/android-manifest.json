@@ -1,0 +1,350 @@
+{
+  "build": "Katana ZERO Android v1.1.10, supplied APK",
+  "files": [
+    {
+      "source": "assets/assets/audiogroup1.dat",
+      "target": "assets/audiogroup1.dat",
+      "size": 3339257,
+      "sha256": "4a6b3b9cdd33cb6b9c363aaf6ac225d3d1b22018f296d3b894d9911a05faeb1f"
+    },
+    {
+      "source": "assets/assets/audiogroup2.dat",
+      "target": "assets/audiogroup2.dat",
+      "size": 14013600,
+      "sha256": "77d54d3b15369db201f6516055ef39e98c4ec1525086e7a7297fcb5b00d245bc"
+    },
+    {
+      "source": "assets/assets/audiogroup3.dat",
+      "target": "assets/audiogroup3.dat",
+      "size": 11453378,
+      "sha256": "3c95aec870e48707374f89760b6a4eab895c55f7348bbf8c9c05fde60d951692"
+    },
+    {
+      "source": "assets/assets/audiogroup4.dat",
+      "target": "assets/audiogroup4.dat",
+      "size": 3090182,
+      "sha256": "4d85ee0556704fd59f32cabb7c3030b5138532e225a14bdd214e7fc9222245df"
+    },
+    {
+      "source": "assets/assets/buffer_sfx.ogg",
+      "target": "assets/buffer_sfx.ogg",
+      "size": 5344,
+      "sha256": "08f8f59461e28b427d3ae9ecc41c8e001c0d2a3b915718df6d65be564bdb1a5f"
+    },
+    {
+      "source": "assets/assets/game.droid",
+      "target": "assets/game.droid",
+      "size": 72005964,
+      "sha256": "0b997cb57c6907413d1c5d94529698cd5a27cfde31e618b61743e5dc0d6accca",
+      "target_sha256": "e2ab73f355d024aa76b4977ef646f798005423afbdd1f23ad14d3ca44a3f3f5c",
+      "patches": [
+        {
+          "offset": 1271568,
+          "before": "a7020000",
+          "after": "64030000",
+          "reason": "Replace the Android SDK startup screen instance with the existing local-save prompt."
+        }
+      ]
+    },
+    {
+      "source": "assets/assets/gamecredentials_android.jwe",
+      "target": "assets/gamecredentials_android.jwe",
+      "size": 686,
+      "sha256": "4934fa61db43e2c06f0ce909684bef5533ae652549038b9c09b952f88fa270e2"
+    },
+    {
+      "source": "assets/assets/options.ini",
+      "target": "assets/options.ini",
+      "size": 427,
+      "sha256": "7f40db42ddf6ebe3cc3d2b11cf15b94656a89c5db6887beb059a1c5aaa5a6a36"
+    },
+    {
+      "source": "assets/assets/song_bossbattle.ogg",
+      "target": "assets/song_bossbattle.ogg",
+      "size": 2233150,
+      "sha256": "425cc6914db9bd4615b388e9ce7d31ceea3e14d1a8ff538e71a3941c4a7f2be5"
+    },
+    {
+      "source": "assets/assets/song_bunker_1.ogg",
+      "target": "assets/song_bunker_1.ogg",
+      "size": 3671065,
+      "sha256": "f9952e2ae3be4d916630f1a8797da65bd96e238a53d576ee04b6ad9a1236b6e0"
+    },
+    {
+      "source": "assets/assets/song_bunker_2.ogg",
+      "target": "assets/song_bunker_2.ogg",
+      "size": 3838245,
+      "sha256": "9211fc705aeff5f0934fdb82071e3bd2ff3ce833630402deacc8b9f561b15081"
+    },
+    {
+      "source": "assets/assets/song_cathedral.ogg",
+      "target": "assets/song_cathedral.ogg",
+      "size": 1094959,
+      "sha256": "54c63fcdf6ffb5d3895c5ff66e32b0734c33eab202d6852f2b08696990db167e"
+    },
+    {
+      "source": "assets/assets/song_chinatown.ogg",
+      "target": "assets/song_chinatown.ogg",
+      "size": 2231344,
+      "sha256": "66ce9a4880a561bd4cd927a9891c6f3e4c826d60caa02c664cdd869a27cb0a6d"
+    },
+    {
+      "source": "assets/assets/song_comingdown.ogg",
+      "target": "assets/song_comingdown.ogg",
+      "size": 1647384,
+      "sha256": "e0868e4aff6a7bfd464c00ab7ee022539dda46d9969991c6ee52215fbf61bade"
+    },
+    {
+      "source": "assets/assets/song_dragon.ogg",
+      "target": "assets/song_dragon.ogg",
+      "size": 2521932,
+      "sha256": "25e970ec4e75743fc05253f05e9364e0392cdea5ed272a9cd905690476992439"
+    },
+    {
+      "source": "assets/assets/song_dreambounce.ogg",
+      "target": "assets/song_dreambounce.ogg",
+      "size": 435597,
+      "sha256": "09e85b7f966b3bb1601ea3d641ea40bf0000cb3095c4564a91d44b03a4390727"
+    },
+    {
+      "source": "assets/assets/song_drivingforce.ogg",
+      "target": "assets/song_drivingforce.ogg",
+      "size": 2884485,
+      "sha256": "4517b04dd018a5cf74508fa9cfbb26c9397157aaa9fc50d29be8a9d974ad3a5d"
+    },
+    {
+      "source": "assets/assets/song_edm.ogg",
+      "target": "assets/song_edm.ogg",
+      "size": 2583899,
+      "sha256": "44a76a45d2d99816bd219575ddc3709fbe74c10c04d45acd838c6714735288ec"
+    },
+    {
+      "source": "assets/assets/song_edm_far.ogg",
+      "target": "assets/song_edm_far.ogg",
+      "size": 2132886,
+      "sha256": "dc0d10a074de72d17872cf8f11e1f08b6ed7ed2ff57a79abc01fbb191901a0dd"
+    },
+    {
+      "source": "assets/assets/song_edm_headphones.ogg",
+      "target": "assets/song_edm_headphones.ogg",
+      "size": 53559,
+      "sha256": "af6f425d8cf44ba9e3a6d4cec5df1f6be306781d2f00b689d8ce70ad8d2e5ad6"
+    },
+    {
+      "source": "assets/assets/song_end_of_the_road.ogg",
+      "target": "assets/song_end_of_the_road.ogg",
+      "size": 1636098,
+      "sha256": "8bfb90e64c3b26415c8cd993362b108828832b76d2cd83faa6a8d10aa081e3cc"
+    },
+    {
+      "source": "assets/assets/song_ending.ogg",
+      "target": "assets/song_ending.ogg",
+      "size": 319730,
+      "sha256": "474f6ab3dbfebda09e6a9a2972cd507215711759b09bc4bcb3cbb05077ef5320"
+    },
+    {
+      "source": "assets/assets/song_ending_2.ogg",
+      "target": "assets/song_ending_2.ogg",
+      "size": 777323,
+      "sha256": "9befe6b9a4d8008ea3f41084453179be35fcd6ffb110ec96dd8020938a52b6a8"
+    },
+    {
+      "source": "assets/assets/song_fullconfession.ogg",
+      "target": "assets/song_fullconfession.ogg",
+      "size": 2298821,
+      "sha256": "52002eb3655478b53a59e239997a575cf865a6d57f5d15c9f6a1147419e8e576"
+    },
+    {
+      "source": "assets/assets/song_graveyard.ogg",
+      "target": "assets/song_graveyard.ogg",
+      "size": 887348,
+      "sha256": "826c43853678300b869adf45b7fc27fc94671528a33d44874f62ab3606412bb8"
+    },
+    {
+      "source": "assets/assets/song_graveyard_2.ogg",
+      "target": "assets/song_graveyard_2.ogg",
+      "size": 1521752,
+      "sha256": "66cd48b9268946f4fafeb163beedf2a5c570a1300530f78bac9a1fb38b11b5e1"
+    },
+    {
+      "source": "assets/assets/song_katanazero.ogg",
+      "target": "assets/song_katanazero.ogg",
+      "size": 2766389,
+      "sha256": "75c3ffca50bdf7ade752305303717ec0464ce1e898773ea8a93cc4224e911ef8"
+    },
+    {
+      "source": "assets/assets/song_killyourtv.ogg",
+      "target": "assets/song_killyourtv.ogg",
+      "size": 948959,
+      "sha256": "92a4f509f3fc659125971d2c252a32666c45de1e9a20f074c7bc3baa457b2f92"
+    },
+    {
+      "source": "assets/assets/song_levelselect.ogg",
+      "target": "assets/song_levelselect.ogg",
+      "size": 1029181,
+      "sha256": "f643e903b4aaefe750881d9cbd235042c66f48efa794e48cf80f2d14a774801c"
+    },
+    {
+      "source": "assets/assets/song_limo.ogg",
+      "target": "assets/song_limo.ogg",
+      "size": 1162323,
+      "sha256": "481a4d7f0c82af2644b028dbcb3cc19bcaf7844df83cbdfdba65403fe9e27881"
+    },
+    {
+      "source": "assets/assets/song_mindgames.ogg",
+      "target": "assets/song_mindgames.ogg",
+      "size": 1343413,
+      "sha256": "65a281daf358a4da72919d22617c58f1c92a3d3ab3d56d0010b2ef14276d802f"
+    },
+    {
+      "source": "assets/assets/song_monster.ogg",
+      "target": "assets/song_monster.ogg",
+      "size": 1861848,
+      "sha256": "9b9a09eee4a3d506ffb977eb37992ef033fdcf0ef78f05310423a7f329aaa3fc"
+    },
+    {
+      "source": "assets/assets/song_neighbormusic.ogg",
+      "target": "assets/song_neighbormusic.ogg",
+      "size": 954743,
+      "sha256": "f41f6bc6253e4469ab29bfd25c54efcb867559eb193cfca85150480fcf682f83"
+    },
+    {
+      "source": "assets/assets/song_neighbormusic_far.ogg",
+      "target": "assets/song_neighbormusic_far.ogg",
+      "size": 545674,
+      "sha256": "643e59a6accc1dddb26ab7494b6b851d26eb0324513eba4431246e3c82713f28"
+    },
+    {
+      "source": "assets/assets/song_nightmare.ogg",
+      "target": "assets/song_nightmare.ogg",
+      "size": 593203,
+      "sha256": "2fffcf52756120a3cfe9c71340bbde2227747a3e5cf2ae24aa9ba8eae8863ee7"
+    },
+    {
+      "source": "assets/assets/song_nocturne.ogg",
+      "target": "assets/song_nocturne.ogg",
+      "size": 1211745,
+      "sha256": "5ec06fcb4fe57217e36e7573b24b6274ef148a507c1d652717747465c90be97a"
+    },
+    {
+      "source": "assets/assets/song_nocturne_ambient.ogg",
+      "target": "assets/song_nocturne_ambient.ogg",
+      "size": 1264924,
+      "sha256": "da00d608a4463cca6925c35aa5b7f3c5dffd90eca28d0f780b2d3cb44e3d87a7"
+    },
+    {
+      "source": "assets/assets/song_nocturne_distorted.ogg",
+      "target": "assets/song_nocturne_distorted.ogg",
+      "size": 1428407,
+      "sha256": "5b6bd83051cc771b1992db1d351ed570379643eacadae9783ad5e59663eec37e"
+    },
+    {
+      "source": "assets/assets/song_precathedral.ogg",
+      "target": "assets/song_precathedral.ogg",
+      "size": 43522,
+      "sha256": "86ca1af7afaebb2b1b988afbec446ed7753138c86824fd8134481f5edaf0cc4b"
+    },
+    {
+      "source": "assets/assets/song_psych_drone_begin.ogg",
+      "target": "assets/song_psych_drone_begin.ogg",
+      "size": 565376,
+      "sha256": "55844ef30138f88a486d1d99a3608f6d502b7335fc5801061d983d3534670eb3"
+    },
+    {
+      "source": "assets/assets/song_psych_drone_loop.ogg",
+      "target": "assets/song_psych_drone_loop.ogg",
+      "size": 128848,
+      "sha256": "820ae542bd2ffcc387176b2284cf4c141f648a59e67196603ebe92bddbb482bc"
+    },
+    {
+      "source": "assets/assets/song_rainonbrick.ogg",
+      "target": "assets/song_rainonbrick.ogg",
+      "size": 837015,
+      "sha256": "cd394d7c70ebb828e42b9a2656d8a4b46a1a38a98a0be83299c1038b6ed5df54"
+    },
+    {
+      "source": "assets/assets/song_redmist.ogg",
+      "target": "assets/song_redmist.ogg",
+      "size": 608293,
+      "sha256": "e40dfbfa4314bf74dd32a7d3cde5a827cb676841331ee9369e302d9121cbacc6"
+    },
+    {
+      "source": "assets/assets/song_rooftop.ogg",
+      "target": "assets/song_rooftop.ogg",
+      "size": 1790691,
+      "sha256": "9b30198022763ede5b811c20b1eb075ceb2d97128568b7dbce9035eba3dae00a"
+    },
+    {
+      "source": "assets/assets/song_silhouette.ogg",
+      "target": "assets/song_silhouette.ogg",
+      "size": 2499650,
+      "sha256": "b6dbc6eed668749c2a63c9952c62c91de91f843919c8b7339a4692298d601639"
+    },
+    {
+      "source": "assets/assets/song_slaughterhouse.ogg",
+      "target": "assets/song_slaughterhouse.ogg",
+      "size": 2591715,
+      "sha256": "2eea1a3017e61ef2ee401aa7c673ffc4e35a01c5845c72c827cebcee591b72d7"
+    },
+    {
+      "source": "assets/assets/song_sneaky_driver.ogg",
+      "target": "assets/song_sneaky_driver.ogg",
+      "size": 1798900,
+      "sha256": "07b0766779a8d048d85e81a48ceab707814568a788d6033fa01a7ad3b5d17294"
+    },
+    {
+      "source": "assets/assets/song_snow.ogg",
+      "target": "assets/song_snow.ogg",
+      "size": 682780,
+      "sha256": "d43bfe5e30d8f2f49e8bd9edac2315a2ff78cc26394936b33b9a29ebd1fe6711"
+    },
+    {
+      "source": "assets/assets/song_tensemoment.ogg",
+      "target": "assets/song_tensemoment.ogg",
+      "size": 168349,
+      "sha256": "f9f683b5a50214b9b906f521a3482439982e0f6df675aa89743cc0e8b110f6be"
+    },
+    {
+      "source": "assets/assets/song_thirddistrict.ogg",
+      "target": "assets/song_thirddistrict.ogg",
+      "size": 3673641,
+      "sha256": "edcf4945af75b792b0d254cf76c28e5faa9e6947b64f2a4a8d6e9c5dc3f7ab3e"
+    },
+    {
+      "source": "assets/assets/song_tiedupatthemoment.ogg",
+      "target": "assets/song_tiedupatthemoment.ogg",
+      "size": 1784758,
+      "sha256": "f249d211632c18beb3170058a6397f3295bf9251528b2da5ef7ce7d24a103f5e"
+    },
+    {
+      "source": "assets/assets/song_v_theme.ogg",
+      "target": "assets/song_v_theme.ogg",
+      "size": 1724474,
+      "sha256": "964329affe267673053eab3ca600b9269354dd2ec32958ea4a2e36a1e4f6941f"
+    },
+    {
+      "source": "assets/assets/song_videostore.ogg",
+      "target": "assets/song_videostore.ogg",
+      "size": 170683,
+      "sha256": "98df1d71a63afa4656ef8e15e0e74fb7a69c83281575d92548161e7fa389c02a"
+    },
+    {
+      "source": "assets/assets/song_volition.ogg",
+      "target": "assets/song_volition.ogg",
+      "size": 812460,
+      "sha256": "7a3df6791517bd084b3fa93df1886152a5a88ea8bb442914545b5ae28a61ce7b"
+    },
+    {
+      "source": "assets/assets/song_youwillneverknow.ogg",
+      "target": "assets/song_youwillneverknow.ogg",
+      "size": 2466400,
+      "sha256": "e5690f928a31f2f93a753ef0f0d26fc75806fd07fb1ff0b1b1c49e6e7ede2043"
+    },
+    {
+      "source": "lib/arm64-v8a/libyoyo.so",
+      "target": "lib/arm64-v8a/libyoyo.so",
+      "size": 76489056,
+      "sha256": "a7f8f231cc216dfc9c93d9ac61ba4f082a2332712528be0106234887898ef127"
+    }
+  ]
+}

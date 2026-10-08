@@ -1,0 +1,40 @@
+{
+  "version": 4,
+  "name": "katanazero.zip",
+  "items": [
+    "Katana ZERO.sh",
+    "katanazero"
+  ],
+  "items_opt": [],
+  "attr": {
+    "title": "Katana ZERO",
+    "porter": [
+      "Ronax"
+    ],
+    "desc": "A neon-lit action platformer where a samurai assassin dodges bullets, deflects gunfire and slows time through lethal missions.",
+    "desc_md": null,
+    "inst": "Supply the supported Katana ZERO Android v1.1.10 APK. Rename it to katanazero.apk and copy it to <ports directory>/katanazero/assets/. Launch Katana ZERO to prepare game.port and play. Requires ARM64 firmware, glibc 2.30 or newer, current PortMaster and Python 3. Desktop game files are unsupported. See README.md for instructions and the reference APK hash.",
+    "inst_md": null,
+    "genres": [
+      "action",
+      "platformer"
+    ],
+    "image": null,
+    "rtr": false,
+    "exp": false,
+    "runtime": [],
+    "store": [
+      {
+        "name": "Steam (desktop version)",
+        "gameurl": "https://store.steampowered.com/app/460950/Katana_ZERO/",
+        "developerurl": "https://askiisoft.com/"
+      }
+    ],
+    "availability": "paid",
+    "reqs": [],
+    "arch": [
+      "aarch64"
+    ],
+    "min_glibc": "2.30"
+  }
+}
