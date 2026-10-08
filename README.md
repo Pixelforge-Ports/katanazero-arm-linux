@@ -2,7 +2,26 @@
 
 Thanks to [Askiisoft](https://askiisoft.com/) for creating **Katana ZERO**, an action platformer with sword combat, bullet deflection and time manipulation. PortMaster adaptation by **Pixelforge Ports (Ronax)**.
 
+This port is made possible by **gmloader-next (Gmloadernext)** using the game's original Android ARM64 runner, **`libyoyo.so`**. The APK preparation step packages that runner and the game assets into **`game.port`**, which gmloader-next loads on ARM64 Linux handhelds.
+
 This BYO data package is for **ARM64 (aarch64)** Linux firmware with **glibc 2.30 or newer**, current **PortMaster**, **gptokeyb2** and **Python 3**. The base build was reported working on **RG34XX SP with muOS**, including menus, gameplay, sound, controller input and saving. The BYO first-launch flow and other devices still need handheld testing. R36S, ArkOS and ROCKNIX are further testing targets; this package requires ARM64 firmware.
+
+The package declares these runtime dependencies in **`package/port.json`** for PortMaster installation:
+
+- **`gmtoolkit.squashfs`**
+- **`dotnet-8.0.12.squashfs`**
+
+## Build the BYO ZIP
+
+Requires **Python 3.9 or newer** and only its standard library. From the repository root, run:
+
+```bash
+python build.py
+```
+
+The script copies files from **`package/`** and creates **`dist/katanazero.zip`**. The ZIP contains **`Katana ZERO.sh`** at its root, with the game support files, metadata and artwork inside **`katanazero/`**. Linux executable permissions are preserved. The **`dist/`** folder is ignored by Git.
+
+Keep your APK, prepared **`game.port`** and personal saves out of **`package/`** when building the shareable BYO ZIP.
 
 ## Supply Katana ZERO Android APK
 

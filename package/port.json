@@ -22,7 +22,10 @@
     "image": null,
     "rtr": false,
     "exp": false,
-    "runtime": [],
+    "runtime": [
+      "gmtoolkit.squashfs",
+      "dotnet-8.0.12.squashfs"
+    ],
     "store": [
       {
         "name": "Steam (desktop version)",
