@@ -29,7 +29,9 @@ if [ -f "$GAMEDIR/tools/android-manifest.json" ]; then
         mv "$GAMEDIR/$LOGFILE" "$GAMEDIR/$LOGERR"
         exit 1
     fi
-    if python3 -u "$GAMEDIR/tools/android_compat.py" "$GAMEDIR"; then
+    if python3 -u "$GAMEDIR/tools/android_compat.py" "$GAMEDIR" &&
+       python3 -u "$GAMEDIR/tools/astc_compat.py" "$GAMEDIR" --encoder "$controlfolder/astcenc.aarch64" &&
+       python3 -u "$GAMEDIR/tools/display_compat.py" "$GAMEDIR"; then
         rm -f "$GAMEDIR/$LOGERR"
         echo "Patching process complete!"
         exit 0

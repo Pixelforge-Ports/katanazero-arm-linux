@@ -26,8 +26,10 @@ def verify(archive, manifest, original=False):
         if info.file_size != item['size']:
             raise ValueError('Wrong file size: ' + name)
         with archive.open(name) as stream:
-            expected = item['sha256'] if original else item.get('target_sha256', item['sha256'])
-            if digest(stream) != expected:
+            expected = {item['sha256']} if original else {
+                item.get('target_sha256', item['sha256']), item.get('fullscale_sha256'),
+                item.get('astc4x4_sha256'), item.get('astc4x4_fullscale_sha256')}
+            if digest(stream) not in expected:
                 raise ValueError('Unsupported or damaged game file: ' + name)
 
 

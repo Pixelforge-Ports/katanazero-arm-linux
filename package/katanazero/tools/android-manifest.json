@@ -44,7 +44,10 @@
           "after": "64030000",
           "reason": "Replace the Android SDK startup screen instance with the existing local-save prompt."
         }
-      ]
+      ],
+      "fullscale_sha256": "0215a936142455839627b9f0d45976f2752537f2f389f5b6b4c700e0653cf146",
+      "astc4x4_sha256": "26a4803f59ae8bc21b2f0b27dc66461d744cd0d8314d8dc7c9c2807f9cc8816b",
+      "astc4x4_fullscale_sha256": "4263adbac1b37e0e01ea0191aeac26a5aa88729c4bc851d9b971e8e839ae4db1"
     },
     {
       "source": "assets/assets/gamecredentials_android.jwe",

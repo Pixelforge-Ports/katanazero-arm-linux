@@ -31,7 +31,7 @@ if [ "$DEVICE_ARCH" != "aarch64" ] || [ -z "$GPTOKEYB2" ]; then
 fi
 
 # Setup permissions
-$ESUDO chmod +xwr "$GAMEDIR/gmloadernext.aarch64"
+$ESUDO chmod +xwr "$GAMEDIR/gmloadernext"
 $ESUDO chmod +xr "$GAMEDIR/tools/splash"
 $ESUDO chmod +xr "$GAMEDIR/tools/patchscript"
 
@@ -41,10 +41,11 @@ export SDL_GAMECONTROLLERCONFIG="$sdl_controllerconfig"
 
 # Check if we need to patch the game
 # Android compatibility: an existing game.port does not need a patch log.
-if [ ! -s "$GAMEDIR/game.port" ] || [ -f "$GAMEDIR/assets/katanazero.apk" ]; then
+if [ ! -s "$GAMEDIR/game.port" ] || [ -f "$GAMEDIR/assets/katanazero.apk" ] ||
+   [ ! -s "$GAMEDIR/.astc4x4.json" ] || [ -f "$GAMEDIR/patcherr.txt" ]; then
     export PATCHER_FILE="$GAMEDIR/tools/patchscript"
     export PATCHER_GAME="$(basename "${0%.*}")"
-    export PATCHER_TIME="2 to 5 minutes"
+    export PATCHER_TIME="5 to 15 minutes"
     export PATCHER_QUESTIONS="$GAMEDIR/tools/patcher-name.lua"
     export controlfolder
     export ESUDO
@@ -60,7 +61,7 @@ if [ ! -s "$GAMEDIR/game.port" ] || [ -f "$GAMEDIR/assets/katanazero.apk" ]; the
         exit 1
     fi
     if [ ! -s "$GAMEDIR/game.port" ] || [ -f "$GAMEDIR/patcherr.txt" ] ||
-       [ -f "$GAMEDIR/assets/katanazero.apk" ]; then
+       [ -f "$GAMEDIR/assets/katanazero.apk" ] || [ ! -s "$GAMEDIR/.astc4x4.json" ]; then
         echo "Preparation failed. Check katanazero/patcherr.txt."
         pm_finish
         exit 1
@@ -74,9 +75,15 @@ if [ -f "$GAMEDIR/splash.png" ]; then
 fi
 
 # Assign gptokeyb and load the game
-$GPTOKEYB2 "gmloadernext.aarch64" -c "katanazero.ini" &
-pm_platform_helper "$GAMEDIR/gmloadernext.aarch64" >/dev/null
-./gmloadernext.aarch64 -c gmloader.json
+# Full-scale compatibility also upgrades an existing prepared game without an APK.
+if ! python3 "$GAMEDIR/tools/display_compat.py" "$GAMEDIR"; then
+    pm_finish
+    exit 1
+fi
+# Keep the process name within Linux's 15-character limit for the exit shortcut.
+$GPTOKEYB2 "gmloadernext" -c "katanazero.ini" &
+pm_platform_helper "$GAMEDIR/gmloadernext" >/dev/null
+./gmloadernext -c gmloader.json
 
 # Cleanup
 pm_finish
